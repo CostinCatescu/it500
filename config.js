@@ -5,7 +5,7 @@ const path = require('path');
 let config = {
     debug: false,
     loadError: false,
-    pollIntervalSeconds: 120
+    pollIntervalSeconds: 60
 };
 
 function init() {

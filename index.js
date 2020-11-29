@@ -29,7 +29,7 @@ async function poll(){
 
 async function init() {
     log('it500 MQTT publish program starting.');
-    mqtt.connect(config.mqttServer, config.mqttUsername, config.mqttPassword);
+    mqtt.connect(config.mqttServer,  config.mqttUsername, config.mqttPassword);
     setInterval(() => poll(), config.pollIntervalSeconds * 1000);
     log(`Timer set to publish every ${config.pollIntervalSeconds} seconds.`);
 }
